@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Life Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+
+        <!--Greeting-->
+    <section class="card greeting">
+      <button id="theme-toggle" class="btn btn-ghost theme-btn" type="button">Dark Mode</button>
+      <div id="clock" class="clock">00.00.00</div>
+      <div id="date" class="date"></div>
+      <div id="greeting" class="greeting"></div>
+      <div id="name-form" class="form-name"></div>
+      <input id="name-input" class="input-name" aria-placeholder="your-name" maxLength="20">
+      <button id="name-save" class="btn" type="button">Save</button>
+    </section>
+
+    <div class="grid">
+        
+        <!--Focus Timer-->
+    <section class="card">
+        <h2>Focus Timer</h2>
+        <div id="timer-display" class="timer">25:00</div>
+        <div class="btn-row">
+          <button id="timer-start" class="btn btn-ghost" type="button">Start</button>
+          <button id="timer-stop" class="btn" type="button">Stop</button>
+          <button id="timer-reset" class="btn" type="button">Reset</button>
+        </div>
+    </section>
+
+        <!--Task-->
+    <section class="card">
+        <h2>Task</h2>
+         <div class="row">
+          <input id="task-input" type="text" placeholder="Add a new task...">
+          <button id="task-add" class="btn" type="button">Add</button>
+        </div>
+        <p id="task-message" class="message"></p>
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+
+       <!-- 4. Quick Links -->
+      <section class="card">
+        <h2>Quick Links</h2>
+        <div class="row">
+          <input id="link-name" type="text" placeholder="Link name">
+          <input id="link-url" type="text" placeholder="URL">
+          <button id="link-add" class="btn" type="button">Add Link</button>
+        </div>
+        <p id="link-message" class="message"></p>
+        <div id="link-list" class="link-list"></div>
+      </section>
+
+    </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
